@@ -1,0 +1,31 @@
+.logo {
+	display: inline-block;
+	font-family: $secondary-font;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: $accent-cl;
+	text-decoration: none;
+}
+
+.logo--dark {
+	color: $logo-dark-cl;
+}
+
+.logo--white {
+	color: $white-txt-cl;
+}
+@media screen and (min-width: 768px) {
+	.header .logo {
+		margin-right: 88px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.header .logo {
+		margin-right: 93px;
+	}
+}
+
+.footer .logo {
+	margin-bottom: 20px;
+}

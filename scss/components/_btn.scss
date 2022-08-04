@@ -1,0 +1,90 @@
+.btn {
+	min-width: 200px;
+	padding: 10px 32px;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: 0;
+
+	color: $white-txt-cl;
+	background-color: $accent-cl;
+
+	cursor: pointer;
+	font-family: inherit;
+}
+
+@media screen and (max-width: 767px) {
+	.menu-btn {
+		margin-left: auto;
+		position: absolute;
+		top: 10px;
+		left: 90%;
+		padding: 0;
+		border: 0;
+		z-index: 2;
+
+		background-color: inherit;
+	}
+
+	.menu-btn__icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.menu-btn__icon-close {
+		display: none;
+	}
+	.menu-btn.is-open .menu-btn__icon-close {
+		display: block;
+	}
+	.menu-btn.is-open .menu-btn__icon-menu {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.menu-btn {
+		display: none;
+	}
+}
+
+.footer {
+	.btn {
+		padding: 10px 28px;
+		margin-left: 12px;
+	}
+	.btn__box {
+		display: flex;
+		align-items: center;
+	}
+
+	.btn__icon {
+		margin-left: 10px;
+		width: 24px;
+		height: 24px;
+		fill: currentColor;
+	}
+}
+
+.filter__btn {
+	min-width: 73px;
+	padding: 6px 22px;
+
+	font-weight: 500;
+	line-height: 1.62;
+	color: $main-txt-cl;
+	background-color: $secondary-bg-cl;
+	box-shadow: none;
+
+	transition: color 250ms $cubic, background-color 250ms $cubic, box-shadow 250ms $cubic;
+
+	&:hover,
+	&:focus {
+		color: $white-txt-cl;
+		background-color: $accent-cl;
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	}
+}
